@@ -18,8 +18,8 @@ export default class ImageViewer extends React.Component<ImageZoomProps, ImageZo
   private animatedPositionY = new Animated.Value(0);
 
   // 缩放大小
-  private scale = 1;
-  private animatedScale = new Animated.Value(1);
+  private scale = this.props.initScale || 1;
+  private animatedScale = new Animated.Value(this.scale);
   private zoomLastDistance: number | null = null;
   private zoomCurrentDistance = 0;
 

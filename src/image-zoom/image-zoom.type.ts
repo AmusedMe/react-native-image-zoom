@@ -106,6 +106,9 @@ export class ImageZoomProps {
    */
   public useHardwareTextureAndroid?: boolean = true;
 
+  // 初始缩放系数
+  public initScale?: number = 1
+
   /**
    * minimum zoom scale
    */
